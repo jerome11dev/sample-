@@ -15,7 +15,7 @@ export class AppComponent {
 
   parContents=[
     {id:'c1',name:'technical',score:0,isactive:false},
-    {id:'c2',name:'communication',score:0,isactive:false},
+    {id:'c2',name:'communication',score:0,isactive:true},
     {id:'c3',name:'Attitude',score:0,isactive:false},
     {id:'c4',name:'punctuality',score:0,isactive:false},
     {id:'c5',name:'Attention to details',score:0,isactive:false},
@@ -26,6 +26,75 @@ export class AppComponent {
     {id:'A001',empId:'E001',empName:'John',isActive:false},
     {id:'A002',empId:'E002',empName:'David',isActive:false},
     {id:'A003',empId:'E003',empName:'Solomon',isActive:false}
+  ]
+
+
+
+  modules=[
+    {
+      moduleId:"m1",
+      moduleName:"self Service",
+      Roles:[
+        {
+          roleId:"role1",
+          roleName:"Admin",
+          permission:[
+            {permisssionName:"create",isactive:true},
+            {permisssionName:"delete",isactive:false},
+            {permisssionName:"update",isactive:false},
+            {permisssionName:"update",isactive:true},
+          ]
+        },
+        {
+          roleId:"role2",
+          roleName:"HR",
+          permission:[
+            {permisssionName:"create",isactive:true},
+            {permisssionName:"delete",isactive:false},
+            {permisssionName:"update",isactive:false},
+            {permisssionName:"update",isactive:true},
+          ]
+        },
+        {
+          roleId:"role3",
+          roleName:"Accountant",
+          permission:[
+            {permisssionName:"create",isactive:true},
+            {permisssionName:"delete",isactive:false},
+            {permisssionName:"update",isactive:false},
+            {permisssionName:"update",isactive:true},
+          ]
+        }
+      ]
+      
+    },
+    {
+      moduleId:"m2",
+      moduleName:"par",
+      Roles:[
+        {
+          roleId:"role1",
+          roleName:"Admin",
+          permission:[
+            {permisssionName:"create",isactive:true},
+            {permisssionName:"delete",isactive:false},
+            {permisssionName:"update",isactive:false},
+            {permisssionName:"update",isactive:true},
+          ]
+        },
+        {
+          roleId:"role2",
+          roleName:"HR",
+          permission:[
+            {permisssionName:"create",isactive:true},
+            {permisssionName:"delete",isactive:false},
+            {permisssionName:"update",isactive:false},
+            {permisssionName:"update",isactive:true},
+          ]
+        }
+      ]
+      
+    }
   ]
 
   // parContents=[

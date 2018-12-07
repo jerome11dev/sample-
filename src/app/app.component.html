@@ -72,4 +72,22 @@
             <button (click)="callLoop()">Click</button>
         </div>
     </div>
+
+    <div class="row">
+        <h1>Permission</h1>
+        <table class="table">
+            <tr *ngFor="let module of modules">
+                <td>{{module.moduleName}}</td>
+                <td *ngFor="let role of module.Roles">
+                    <table>
+                        <tr *ngFor="let perm of role.permission">
+                            <td><input type="checkbox" [name]="perm.permisssionName" [(ngModel)]="perm.isactive"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </table>
+    </div>
+    
 </div>
+
